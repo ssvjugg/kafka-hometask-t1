@@ -14,5 +14,6 @@ public class WeatherConsumer {
     public void listen(ConsumerRecord<Long, WeatherDTO> record) {
         log.info("Received weather message: " + record.value());
         System.out.println(record.value());
+
     }
 }
